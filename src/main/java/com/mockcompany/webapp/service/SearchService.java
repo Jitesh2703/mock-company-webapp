@@ -1,13 +1,15 @@
 package com.mockcompany.webapp.service;
 
-import com.mockcompany.webapp.data.ProductItemRepository;
-import com.mockcompany.webapp.model.ProductItem;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
+import com.mockcompany.webapp.data.ProductItemRepository;
+import com.mockcompany.webapp.model.ProductItem;
 
 @Service
 public class SearchService {
@@ -69,6 +71,6 @@ public class SearchService {
             }
         }
         // Return results
-        return itemList;
+        return Collections.emptyList();
     }
 }
